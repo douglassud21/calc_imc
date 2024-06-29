@@ -1,0 +1,112 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+}
+
+.conteiner {
+    background-color: #f9f9f9;
+    height: 480px;
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+
+
+
+/* Estilização para os campos de preenchimento */
+.input input[type="text"],
+.input input[type="number"] {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Efeito ao focar no campo */
+.input input[type="text"]:focus,
+.input input[type="number"]:focus {
+    border-color: #fc1f44;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2), 0 0 8px rgba(185, 0, 55, 0.678);
+    outline: none;
+}
+
+/* Estilização para o contêiner principal */
+.input {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #fc1f44;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: #aa0303;
+    box-shadow: inset 0 1px 3px rgba(250, 79, 79, 0.623), 0 0 8px rgba(185, 0, 55, 0.678);
+}
+
+/* Estilização para a parte do resultado */
+.result {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid #fc1f44;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(238, 69, 69, 0.1);
+    font-size: 18px;
+    color: #000000;
+    text-align: center;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Efeito ao passar o mouse sobre o resultado */
+.result:hover {
+    background-color: #f5003531;
+    box-shadow: 0 6px 12px rgba(247, 7, 7, 0.2);
+    scale: 1.03;
+}
+
+/* Estilização para o título do resultado */
+.result .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
